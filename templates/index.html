@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+
+
+<div style="margin-top: 50px">
+    <input type="text">
+    <span onclick="Popup('/AddData/')" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</div>
+
+
+<script>
+    
+    function popupcallback(arg) {
+        alert(arg);
+        document.getElementsByTagName("input")[0].value = arg;
+
+    }
+    
+    
+    function Popup(url) {
+        window.open(url,"aaa","status=1,height:100,width:100,toolbar=0,resizeable=0")
+    }
+</script>
+
+
+</body>
+</html>
